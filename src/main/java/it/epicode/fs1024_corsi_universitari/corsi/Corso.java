@@ -32,4 +32,6 @@ public class Corso {
 
     private LocalDate dataInizio;
 
+    private int numeroMassimoPartecipanti;
+
 }

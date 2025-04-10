@@ -8,5 +8,6 @@ import java.util.List;
 public interface StudenteRepository extends JpaRepository<Studente, Long> {
     Studente findByEmail(String email);
     Studente findByMatricola(String matricola);
-    List<Studente> findByNomeAndCognome(String nome, String cognome);
+    List<Studente> findByNomeAndCognomeIgnoreCase(String nome, String cognome);
+
 }
